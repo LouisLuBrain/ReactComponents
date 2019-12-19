@@ -1,5 +1,10 @@
 import React from 'react';
 import './TopBar.css';
+/**
+ * topbar component
+ * @class TopBar
+ * @extends {React.Component}
+ */
 class TopBar extends React.Component {
   constructor(props) {
     super(props);

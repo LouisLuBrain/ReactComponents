@@ -16,9 +16,9 @@ You will also see any lint errors in the console.
 
 ## Topbar
 
-### props
+### props:
 
-accept an Array like: 
+#### {Array} SectionList
 
 ```javascript
 [{
