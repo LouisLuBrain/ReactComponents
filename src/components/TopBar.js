@@ -29,9 +29,7 @@ class TopBar extends React.Component {
   render() {
     return (
       <div className="topbar">
-        <div className="topbar-logo">
-          <img className="topbar-logo-img" alt="pic missing" url="" />
-      </div>
+        <div className="topbar-logo iconfont icon-logo"></div>
         <div className="topbar-list">
           {this.state.sectionList.map((item,index)=>
             (
