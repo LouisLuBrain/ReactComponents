@@ -27,6 +27,6 @@ accept an Array like:
   url:''
 },...]
 ```
-> `label`: the text will display on topbar.
-> `icon`: the icon will display on topbar.(font-awesome is supported)
-> `url`: click one section and jump to the url, which is still under dev.
+> * `label`: the text will display on topbar.
+> * `icon`: the icon will display on topbar.(font-awesome is supported)
+> * `url`: click one section and jump to the url. (still under dev).
