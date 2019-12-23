@@ -19,14 +19,15 @@ class TopBar extends React.Component {
     };
     
     this.handleClick = (e) => {
+      // idx: the item which be clicked
       let idx = e.target.getAttribute('index');
-      
+      // reset the flags
       const sectionList = this.state.sectionList.map((item) => {
         item.active=false;
         return item;
       });
-
       sectionList[idx].active = true;
+
       this.setState({sectionList: sectionList});
     };
   }
@@ -66,8 +67,8 @@ function TopbarItem(props) {
       onClick={props.handleClick}
       index={props.index}
       className={`topbar-item ${props.active?'active':''}`}>
-    <i className={`fa fa-${props.icon} topbar-item-icon`}></i>
-    {props.children}
+      <i className={`fa fa-${props.icon} topbar-item-icon`}></i>
+      {props.children}
     </div>);
 }
 export default TopBar; 

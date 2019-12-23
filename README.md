@@ -30,3 +30,7 @@ You will also see any lint errors in the console.
 > * `label`: the text will display on topbar.
 > * `icon`: the icon will display on topbar.(font-awesome is supported)
 > * `url`: click one section and jump to the url. (still under dev).
+
+#### {String} username||'Guest'
+
+user's name to display
