@@ -2,6 +2,7 @@ import React, { useState, useContext, useReducer } from 'react';
 import './TopBar.css';
 
 function TopBar(props) {
+  const sectionList = props.sectionList||[];
   const [selectedID, dispatch] = useReducer(reducer, 0);
   const [username] = useState(props.username||'Guset');
   return (
@@ -9,14 +10,14 @@ function TopBar(props) {
       <div className="topbar-logo iconfont icon-logo"></div>
       <div className="topbar-list">
         <SelectContext.Provider value={{selectedID, dispatch}}>
-          {props.sectionList.map((item,index)=>
+          {sectionList.map((item,index)=>
             (
               <TopbarItem
                 url={item.url||''}
                 icon={item.icon}
                 key={index}
                 index={index}>
-                  {item.label||item}
+              {item.label||item}
               </TopbarItem>
             )
           )}
