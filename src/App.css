@@ -9,6 +9,9 @@
   width: 10vw;
   min-width: 120px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   box-shadow: 1px 0px 5px 0px rgba(100, 100, 100, 0.3);
 }
 .sidebar-header{
@@ -21,7 +24,6 @@
   text-align: center;
 }
 .sidebar-nav{
-  margin-top: 10px;
   padding-left: 10px;
   display: flex;
   flex-direction: column;
@@ -60,10 +62,19 @@ a.link-active::after{
   transform: translateX(22px);
 }
 .sidebar-link{
-
+  font-size: 18px;
+  color: #4dc0b5;
+  flex: 10;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .sidebar-link-a{
-
+  color: #4dc0b5;
+  margin-left: 5px;
+  text-decoration: none;
 }
 .viewer{
   flex: 1;

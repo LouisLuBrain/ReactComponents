@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*pseudo class*/
+.after::after{
+  content: '';
+}
+.before::before{
+  content: '';
+}
+/*transition class*/
+@import "./animation.css";

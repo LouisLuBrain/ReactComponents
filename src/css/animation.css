@@ -1,0 +1,74 @@
+/*transition class*/
+
+/*a default transition class for usual sence*/
+.transition{ transition: 0.5s 0s ease-in-out; }
+
+/*transition-duration*/
+.t-dur-1{ transition-duration: 0.25s; }
+.t-dur-2{ transition-duration: 0.5s; }
+.t-dur-3{ transition-duration: 0.75s; }
+.t-dur-4{ transition-duration: 0.1s; }
+
+/*transistion-timing-function*/
+.t-fn{ transition-timing-function: linear; }
+.t-fn-ease{ transition-timing-function: ease-in-out; }
+.t-fn-overflow{ transition-timing-function: cubic-bezier(0.5,-0.5,1,0.5); }
+.t-fn-buffer{ transition-timing-function: cubic-bezier(0,0.5,0.5,1.5); }
+
+/*transition-delay*/
+.t-del-1{ transition-delay: 0.25s; }
+.t-del-2{ transition-delay: 0.5s; }
+.t-del-3{ transition-delay: 0.75s; }
+.t-del-4{ transition-delay: 0.1s; }
+
+/*transform translate*/
+.antx-1{}
+.antx-2{}
+.antx-4{}
+.antx-8{}
+
+.anty-1{}
+.anty-2{}
+.anty-4{}
+.anty-8{}
+
+/*transform rotate*/
+.antr-1{transform: rotateZ(45deg)}
+.antr-2{transform: rotateZ(90deg)}
+.antr-3{transform: rotateZ(135deg)}
+.antr-4{transform: rotateZ(180deg)}
+.antr-5{transform: rotateZ(225deg)}
+.antr-6{transform: rotateZ(270deg)}
+.antr-7{transform: rotateZ(315deg)}
+.antr-8{transform: rotateZ(360deg)}
+.-antr-1{transform: rotateZ(-45deg)}
+.-antr-2{transform: rotateZ(-90deg)}
+.-antr-3{transform: rotateZ(-135deg)}
+.-antr-4{transform: rotateZ(-180deg)}
+.-antr-5{transform: rotateZ(-225deg)}
+.-antr-6{transform: rotateZ(-270deg)}
+.-antr-7{transform: rotateZ(-315deg)}
+.-antr-8{transform: rotateZ(-360deg)}
+
+/*transform scale*/
+.-ants-2{transform: scale(0.25,0.25);}
+.-ants-1{transform: scale(0.5,0.5);}
+.ants-1{transform: scale(1.25,1.25);}
+.ants-2{transform: scale(1.5,1.5);}
+.ants-0{transform: scale(1,1);}
+
+.-antsx-2{transform: scaleX(0.25);}
+.-antsx-1{transform: scaleX(0.5);}
+.antsx-1{transform: scaleX(1.25);}
+.antsx-2{transform: scaleX(1.5);}
+.antsx-0{transform: scaleX(1);}
+
+.-antsy-2{transform: scaleX(0.25);}
+.-antsy-1{transform: scaleX(0.5);}
+.antsy-1{transform: scaleX(1.25);}
+.antsy-2{transform: scaleX(1.5);}
+.antsy-0{transform: scaleX(1);}
+
+.ants-blink{transform: scale(1.05,1.05);}
+
+

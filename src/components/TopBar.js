@@ -23,12 +23,6 @@ function TopBar(props) {
           )}
         </SelectContext.Provider>
       </div>
-      <div className="topbar-user">
-        <div className="topbar-user-avatar">
-          <img className="topbar-user-avatar-img" alt="pic missing" url=""/>
-        </div>
-        <span className="topbar-user-name">{username}</span>
-      </div>
     </div>
   );
 }
