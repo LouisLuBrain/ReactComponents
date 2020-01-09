@@ -1,0 +1,38 @@
+div.calender-switch-btn-left,div.calender-switch-btn-right{
+  outline: none;
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  transition: 0.3s 0.2s ease-in-out;
+  /* font-weight: 700; */
+}
+div.calender-switch-btn-right::after{
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 100%;
+  background-color: #fff;
+  left: -8px;
+  top: 0;
+  transition: 0.3s ease-in-out;
+}
+div.calender-switch-btn-right:hover::after {
+  transform: translateX(30px);
+}
+div.calender-switch-btn-left::after{
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 100%;
+  background-color: #fff;
+  left: 100%;
+  top: 0;
+  transition: 0.5s ease-in-out;
+}
+div.calender-switch-btn-left:hover::after {
+  transform: translateX(-30px);
+}
+div.calender-switch-btn-right:hover,
+div.calender-switch-btn-left:hover{
+  /* hover effect */
+}

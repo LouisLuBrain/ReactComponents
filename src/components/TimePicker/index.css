@@ -1,0 +1,9 @@
+div.time-scroller:::-webkit-scrollbar{
+  width: 0px!important;
+}
+div.time-scroller{
+  -ms-overflow-style: none;
+} 
+div.time-scroller{
+ overflow: -moz-hidden-unscrollable; 
+}
