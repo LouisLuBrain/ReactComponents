@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import DatePicker from '../components/DatePicker'
 import TimePicker from '../components/TimePicker'
 import DateTimePicker from '../components/DateTimePicker'
+import RangePicker from '../components/RangePicker'
 import Card from './Card'
 
 function DatePickerView(props) {
@@ -24,9 +25,7 @@ function DatePickerView(props) {
         <TimePicker onChange={logTime} panel={['H', 'M']}/>
         <div className="p-1">{`you picked ${time.toString()}`}</div>
       </Card>
-      <Card>
-        <DateTimePicker />
-      </Card>
+      
     </div>
   )
 }

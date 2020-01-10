@@ -6,6 +6,13 @@ function timeFormating(date, config) {
   })
 }
 
+const configObject = {
+  H: 23,
+  M: 59,
+  S: 59,
+}
+
 export default {
-  timeFormating: timeFormating
+  timeFormating: timeFormating,
+  configObject: configObject,
 }
