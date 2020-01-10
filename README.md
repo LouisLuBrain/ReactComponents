@@ -35,6 +35,24 @@ You will also see any lint errors in the console.
 
 user's name to display
 
+## Date Picker
+
+### props: 
+
+#### {String} limit 
+
+```javascript
+// todo
+```
+
+#### {Function} onChange
+
+```javascript
+function handler(e) {
+  e // Picked Date
+}
+```
+
 # About tailwind init
 
 1. npm or yarn tailwind
