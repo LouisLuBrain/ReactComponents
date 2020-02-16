@@ -10,4 +10,4 @@
   content: '';
 }
 /*transition class*/
-@import "./animation.css";
+@import "../font/css/font-awesome.min.css";

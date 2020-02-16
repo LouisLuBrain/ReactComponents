@@ -1,0 +1,71 @@
+.tree-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.25rem;
+}
+.tree-sub-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0rem 0.25rem;
+  padding: 0.25rem 1rem;
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.2s ease-in-out;
+}
+.tree-sub-container.expanded{
+  max-height: 9999px;
+}
+.tree-sub-container.lined {
+  border-left: 1px solid rgba(100, 100, 100, 0.3);
+}
+.tree-item{
+  padding: 0.25rem 0rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.tree-item-arch{
+  font-size: 1.25rem!important;
+  cursor: pointer;
+  color: #666666;
+  /* padding-right: 0.5rem; */
+  transform: rotateZ(0deg);
+  transition: 0.2s ease-in-out;
+}
+.tree-item-arch.expanded{
+  transform: rotateZ(90deg);
+}
+.tree-item-checkbox{
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.2rem;
+  margin: 0rem 0.5rem;
+  border: 1px solid #666666;
+}
+.tree-item-checkbox .checked {
+  background-color: dodgerblue;
+}
+.tree-item-checkbox .half-checked {
+  background-color: white;
+}
+.tree-item-icon{
+  padding: 0 0.25rem;
+}
+.tree-item-label{
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #666666;
+  padding: 0rem 0.2rem;
+  border-radius: 0.2rem;
+  min-width: 50px;
+}
+.tree-item-label:hover {
+  color: white;
+  background-color: dodgerblue;
+}

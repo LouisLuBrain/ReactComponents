@@ -21273,7 +21273,7 @@ video {
 
 /*transition class*/
 
-@import "./animation.css";
+@import "../font/css/font-awesome.min.css";
 
 @media (max-width: 640px) {
   .sm\:sr-only {
