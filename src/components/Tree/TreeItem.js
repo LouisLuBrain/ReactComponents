@@ -10,6 +10,7 @@ export default class TreeItem extends Component {
     super(props)
     this.state = {
       checked: props.checked||false,
+      halfChecked: props.item.subTree ? false : null,
       expand: false,
     }
   }
@@ -41,7 +42,7 @@ export default class TreeItem extends Component {
 
   renderCheckbox = (key) => {
     return (
-      <div className="tree-item-checkbox" onClick={() => this.handleCheck(key)}></div>
+      <div className={`tree-item-checkbox fa fa-check ${this.state.checked ? 'checked' : 'unchecked'} `} onClick={() => this.handleCheck(key)}></div>
     )
   }
 

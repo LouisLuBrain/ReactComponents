@@ -39,18 +39,29 @@
 }
 .tree-item-checkbox{
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0rem;
   display: inline-block;
+  vertical-align: middle;
+  text-align: center;
   width: 1rem;
   height: 1rem;
+  line-height: 0.75rem;
   border-radius: 0.2rem;
   margin: 0rem 0.5rem;
+  color: white;
+  transition: font-size 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.tree-item-checkbox.checked {
+  font-size: 0.75rem;
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+.tree-item-checkbox.unchecked {
+  font-size: 0rem;
+  background-color: white;
   border: 1px solid #666666;
 }
-.tree-item-checkbox .checked {
-  background-color: dodgerblue;
-}
-.tree-item-checkbox .half-checked {
+.tree-item-checkbox.half-checked {
   background-color: white;
 }
 .tree-item-icon{
