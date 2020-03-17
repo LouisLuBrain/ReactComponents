@@ -7,7 +7,6 @@ function TopBar(props) {
   const [username] = useState(props.username||'Guset');
   return (
     <div className="topbar">
-      <div className="topbar-logo iconfont icon-logo"></div>
       <div className="topbar-list">
         <SelectContext.Provider value={{selectedID, dispatch}}>
           {sectionList.map((item,index)=>
