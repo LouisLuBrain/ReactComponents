@@ -4,6 +4,7 @@ import NavigationView from './views/NavigationView';
 import DatePickerView from './views/DatePickerView';
 import ListView from './views/ListView'
 import TreeView from './views/TreeView'
+import ScrollSelectorView from './views/ScrollSelectorView'
 import './App.css';
 
 function App(props) {
@@ -17,6 +18,7 @@ function App(props) {
           <NavLink exact activeClassName="after after:bg-cyan after:absolute after:inset-y-0 after:-left-2 after:w-1 after:h-full text-cyan" className="inline-block font-bold relative text-gray-500 my-2" to="/datepicker">DatePicker</NavLink>
           <NavLink exact activeClassName="after after:bg-cyan after:absolute after:inset-y-0 after:-left-2 after:w-1 after:h-full text-cyan" className="inline-block font-bold relative text-gray-500 my-2" to="/currency">Currency</NavLink>
           <NavLink exact activeClassName="after after:bg-cyan after:absolute after:inset-y-0 after:-left-2 after:w-1 after:h-full text-cyan" className="inline-block font-bold relative text-gray-500 my-2" to="/tree">Tree</NavLink>
+          <NavLink exact activeClassName="after after:bg-cyan after:absolute after:inset-y-0 after:-left-2 after:w-1 after:h-full text-cyan" className="inline-block font-bold relative text-gray-500 my-2" to="/scrollselector">Scroll Selector</NavLink>
         </div>
         <div className="flex-grow text-cyan text-center flex justify-center items-end py-2 fa fa-github">
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/LouisLuBrain/ReactComponents" className="sidebar-link-a">github</a>
@@ -29,6 +31,7 @@ function App(props) {
             <Route path="/datepicker" render={()=><DatePickerView />} />
             <Route path="/currency" render={()=><ListView />} />
             <Route path="/tree" render={()=><TreeView />} />
+            <Route path="/scrollselector" render={()=><ScrollSelectorView />} />
           </Switch>
         </div>
       </div>

@@ -1,0 +1,54 @@
+.scroll-select-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.scroll-select-icon-span{
+  padding: 0.25rem 0.5rem;
+}
+.select-option-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* height: 4.5rem; */
+}
+.scroll-select-label-container{
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+.scroll-select-label-container:nth-child(1) {
+  opacity: 0.5;
+  transform: rotateX(-45deg);
+}
+/* .scroll-select-label-container:nth-child(2) {
+  opacity: 0.75;
+  transform: rotateX(-22.5deg);
+} */
+.scroll-select-label-container:nth-child(2) {
+  opacity: 1;
+}
+/* .scroll-select-label-container:nth-child(4) {
+  opacity: 0.75;
+  transform: rotateX(22.5deg);
+} */
+.scroll-select-label-container:nth-child(3) {
+  opacity: 0.5;
+  transform: rotateX(45deg);
+}
+.scroll-select-label-container:hover{
+  transform: rotateX(0deg) scale(1.05);
+}
+.scroll-select-label{
+  font-weight: 600;
+}
+.scroll-select-label.default-selected{
+  color: darkcyan;
+}
+.scroll-select-label.prev-selected{
+    opacity: 0.5;
+  transform: rotateX(-45deg);
+}
+.scroll-select-label.nect-selected{
+    opacity: 0.5;
+  transform: rotateX(45deg);
+}
